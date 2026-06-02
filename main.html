@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg:      #F9F8F5;
+      --text:    #1A1917;
+      --muted:   #8A8784;
+      --faint:   #B5B2AD;
+      --border:  #E0DDD7;
+      --accent:  #5C4A32;
+    }
+
+    html { font-size: 18px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ─── LAYOUT ─────────────────────────────────────────── */
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ─── NAV ────────────────────────────────────────────── */
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 2.8rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3.5rem;
+    }
+
+    .nav-name {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.18s;
+    }
+
+    .nav-name:hover { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.18s;
+      cursor: pointer;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a.active { color: var(--text); }
+
+    /* ─── PAGES ──────────────────────────────────────────── */
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+      animation: fadeUp 0.28s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(7px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── TYPOGRAPHY ─────────────────────────────────────── */
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.15rem;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.18s;
+    }
+
+    a:hover {
+      text-decoration-color: var(--text);
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 1.6rem;
+      display: block;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.6rem 0;
+    }
+
+    /* ─── HOME ───────────────────────────────────────────── */
+
+    .home-intro {
+      display: flex;
+      gap: 2.4rem;
+      align-items: flex-start;
+      margin-bottom: 2.4rem;
+    }
+
+    .home-photo-wrap {
+      flex-shrink: 0;
+      width: 108px;
+      height: 132px;
+    }
+
+    .home-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .home-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      background: var(--border);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 0.5rem;
+    }
+
+    .home-photo-placeholder span {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      color: var(--faint);
+      letter-spacing: 0.06em;
+    }
+
+    .home-meta h1 {
+      font-size: 1.85rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+    }
+
+    .pronouns {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--muted);
+      letter-spacing: 0.07em;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .social-row {
+      display: flex;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+    }
+
+    .social-row a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      transition: color 0.18s;
+    }
+
+    .social-row a:hover { color: var(--accent); }
+
+    .email-line {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .favs-list {
+      list-style: none;
+    }
+
+    .favs-list li {
+      font-size: 0.93rem;
+      line-height: 1.6;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .favs-list li:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .favs-list li b {
+      font-weight: 500;
+      color: var(--text);
+      font-style: normal;
+    }
+
+    /* ─── BLOG ───────────────────────────────────────────── */
+
+    .post-list { list-style: none; }
+
+    .post-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.5rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .post-item:first-child { border-top: 1px solid var(--border); }
+
+    .post-title {
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      flex: 1;
+      transition: color 0.18s;
+    }
+
+    .post-title:hover { color: var(--accent); text-decoration: none; }
+
+    .post-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--faint);
+      white-space: nowrap;
+      letter-spacing: 0.06em;
+      flex-shrink: 0;
+    }
+
+    /* ─── RESEARCH ───────────────────────────────────────── */
+
+    .paper-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .paper-item:first-child { border-top: 1px solid var(--border); }
+
+    .paper-title {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      line-height: 1.45;
+    }
+
+    .paper-authors {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 0.25rem;
+    }
+
+    .paper-venue {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--faint);
+      letter-spacing: 0.07em;
+      margin-bottom: 0.7rem;
+    }
+
+    .paper-abstract {
+      font-size: 0.92rem;
+      color: #5A5856;
+      line-height: 1.65;
+      margin-bottom: 0.7rem;
+    }
+
+    .meta-links {
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    .meta-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      transition: color 0.18s;
+    }
+
+    .meta-links a:hover { color: var(--accent); }
+
+    /* ─── PROJECTS ───────────────────────────────────────── */
+
+    .project-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project-item:first-child { border-top: 1px solid var(--border); }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.45rem;
+    }
+
+    .project-name {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .project-year {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--faint);
+      letter-spacing: 0.06em;
+    }
+
+    .project-desc {
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.65;
+      margin-bottom: 0.7rem;
+    }
+
+    .tag-row {
+      display: flex;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.6rem;
+    }
+
+    .tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 0.12rem 0.55rem;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+
+    footer {
+      padding: 3rem 0 2.5rem;
+      margin-top: 1rem;
+    }
+
+    .footer-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--faint);
+      letter-spacing: 0.07em;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────── */
+
+    @media (max-width: 520px) {
+      .home-intro { flex-direction: column; }
+      nav { flex-direction: column; gap: 1.2rem; }
+      .nav-links { gap: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <nav>
+    <a class="nav-name" onclick="go('home')">Your Name</a>
+    <ul class="nav-links">
+      <li><a id="nav-home"     onclick="go('home')"     class="active">home</a></li>
+      <li><a id="nav-blog"     onclick="go('blog')"              >blog</a></li>
+      <li><a id="nav-research" onclick="go('research')"          >research</a></li>
+      <li><a id="nav-projects" onclick="go('projects')"          >projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══ HOME ═══════════════════════════════════════════ -->
+  <section class="page active" id="page-home">
+
+    <div class="home-intro">
+      <div class="home-photo-wrap">
+        <!--
+          Replace the placeholder below with:
+          <img src="photo.jpg" alt="Your Name" />
+        -->
+        <div class="home-photo-placeholder">
+          <span>photo</span>
+        </div>
+      </div>
+
+      <div class="home-meta">
+        <h1>Your Name</h1>
+        <span class="pronouns">she / her</span>
+        <div class="social-row">
+          <a href="https://github.com/"   target="_blank">github ↗</a>
+          <a href="https://linkedin.com/" target="_blank">linkedin ↗</a>
+          <a href="https://twitter.com/"  target="_blank">twitter ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Hi! I'm a student at [University], studying [Field]. I'm broadly interested
+      in [research area], especially the intersection of [topic A] and [topic B].
+    </p>
+
+    <p>
+      My research focuses on [brief description]. I believe [short intellectual
+      conviction that drives your work].
+    </p>
+
+    <p>
+      Previously, I've interned at <a href="#">[Company]</a>, contributed to
+      <a href="#">[Project]</a>, and served as [role] at [org].
+    </p>
+
+    <p>
+      I'd love to chat — reach me at
+      <span class="email-line">yourname [at] university [dot] edu</span>
+    </p>
+
+    <hr />
+
+    <span class="section-label">some favorites</span>
+
+    <ul class="favs-list">
+      <li><b>reading</b> — The Three Body Problem, Piranesi, When Breath Becomes Air, Gödel Escher Bach</li>
+      <li><b>music</b> — Laufey, Phoebe Bridgers, Radiohead, Ólafur Arnalds</li>
+      <li><b>films</b> — Everything Everywhere All At Once, Annihilation, Arrival, Whiplash</li>
+    </ul>
+
+  </section>
+
+  <!-- ═══ BLOG ════════════════════════════════════════════ -->
+  <section class="page" id="page-blog">
+
+    <span class="section-label">writing</span>
+
+    <ul class="post-list">
+      <li class="post-item">
+        <a href="#" class="post-title">On the difficulty of explaining things well</a>
+        <span class="post-date">2025.11.03</span>
+      </li>
+      <li class="post-item">
+        <a href="#" class="post-title">Notes on reading academic papers efficiently</a>
+        <span class="post-date">2025.09.14</span>
+      </li>
+      <li class="post-item">
+        <a href="#" class="post-title">A short reflection on first-year research</a>
+        <span class="post-date">2025.07.22</span>
+      </li>
+      <li class="post-item">
+        <a href="#" class="post-title">Why I think formalism matters</a>
+        <span class="post-date">2025.05.08</span>
+      </li>
+      <li class="post-item">
+        <a href="#" class="post-title">Tools I actually use</a>
+        <span class="post-date">2025.03.17</span>
+      </li>
+    </ul>
+
+  </section>
+
+  <!-- ═══ RESEARCH ════════════════════════════════════════ -->
+  <section class="page" id="page-research">
+
+    <span class="section-label">research</span>
+
+    <div class="paper-item">
+      <div class="paper-title">Your Paper Title Here</div>
+      <div class="paper-authors">Your Name, Collaborator One, Advisor Name</div>
+      <div class="paper-venue">CONFERENCE 2025 &nbsp;·&nbsp; Under Review</div>
+      <p class="paper-abstract">
+        A brief description of the paper and its contribution. What problem does it
+        address, what approach do you take, and what does it show?
+      </p>
+      <div class="meta-links">
+        <a href="#">[paper]</a>
+        <a href="#">[code]</a>
+        <a href="#">[poster]</a>
+      </div>
+    </div>
+
+    <div class="paper-item">
+      <div class="paper-title">Another Research Project</div>
+      <div class="paper-authors">Your Name, Another Author</div>
+      <div class="paper-venue">WORKSHOP 2024</div>
+      <p class="paper-abstract">
+        Description of this project. What methods did you use, and what were the
+        key findings or artifacts produced?
+      </p>
+      <div class="meta-links">
+        <a href="#">[paper]</a>
+        <a href="#">[slides]</a>
+      </div>
+    </div>
+
+    <div class="paper-item">
+      <div class="paper-title">Undergraduate Thesis or Capstone</div>
+      <div class="paper-authors">Your Name</div>
+      <div class="paper-venue">UNIVERSITY 2024 &nbsp;·&nbsp; Thesis</div>
+      <p class="paper-abstract">
+        A summary of your thesis work. What question motivated it, and what did
+        you find or build?
+      </p>
+      <div class="meta-links">
+        <a href="#">[pdf]</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ PROJECTS ════════════════════════════════════════ -->
+  <section class="page" id="page-projects">
+
+    <span class="section-label">projects</span>
+
+    <div class="project-item">
+      <div class="project-header">
+        <span class="project-name">Project Alpha</span>
+        <span class="project-year">2025</span>
+      </div>
+      <p class="project-desc">
+        Description of what this project does and why you built it. Keep it
+        concise and honest about the scope.
+      </p>
+      <div class="tag-row">
+        <span class="tag">python</span>
+        <span class="tag">machine learning</span>
+        <span class="tag">open source</span>
+      </div>
+      <div class="meta-links">
+        <a href="#">[github]</a>
+        <a href="#">[demo]</a>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-header">
+        <span class="project-name">Project Beta</span>
+        <span class="project-year">2024</span>
+      </div>
+      <p class="project-desc">
+        Another project description. What problem did you solve, and what
+        did you learn along the way?
+      </p>
+      <div class="tag-row">
+        <span class="tag">haskell</span>
+        <span class="tag">compilers</span>
+        <span class="tag">type theory</span>
+      </div>
+      <div class="meta-links">
+        <a href="#">[github]</a>
+        <a href="#">[writeup]</a>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-header">
+        <span class="project-name">Project Gamma</span>
+        <span class="project-year">2024</span>
+      </div>
+      <p class="project-desc">
+        Third project — a useful tool, creative experiment, or fun side
+        project worth sharing.
+      </p>
+      <div class="tag-row">
+        <span class="tag">typescript</span>
+        <span class="tag">web</span>
+      </div>
+      <div class="meta-links">
+        <a href="#">[github]</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <span class="footer-text">© 2025 Your Name</span>
+  </footer>
+
+</div>
+
+<script>
+  const pages = ['home', 'blog', 'research', 'projects'];
+
+  function go(page) {
+    pages.forEach(p => {
+      document.getElementById('page-' + p).classList.remove('active');
+      document.getElementById('nav-' + p).classList.remove('active');
+    });
+    document.getElementById('page-' + page).classList.add('active');
+    document.getElementById('nav-' + page).classList.add('active');
+    history.pushState(null, '', '#' + page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleHash() {
+    const h = location.hash.slice(1);
+    go(pages.includes(h) ? h : 'home');
+  }
+
+  window.addEventListener('popstate', handleHash);
+  handleHash();
+</script>
+
+</body>
+</html>
