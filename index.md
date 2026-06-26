@@ -21,6 +21,6 @@ I am an undergraduate at UCLA studying Applied Mathematics & Computer Engineerin
 4. i like playing soccer, table tennis and pickleball
 5. the strokes, daft punk, iron maiden, pink floyd, led zeppelin and blue öyster cult are some of my favorite bands  
 
-{% include_relative _includes/publications.md %}
+<!-- {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/services.md %}
+{% include_relative _includes/services.md %} -->
