@@ -1,5 +1,5 @@
 main:
-  - title: Text Prediction from Intracranial Neural Signals
+  - title: "Text Prediction from Intracranial Neural Signals"
     authors: <strong>Aryan Dalal</strong>, Nikhil Dewitt, Aadrij Upadya
     conference_short: Bi-directional Gated Recurrent Units, Deep Learning
     conference: <strong>ECE C143A Neural Signal Processing & Brain-Computer Interface Design, 2025.
@@ -10,7 +10,7 @@ main:
     notes: Final Project for ECE C143A Neural Signal Processing & Brain-Computer Interface Design with Machine Learning (Fall 2025)
     image: ./assets/img/teaser_example.png
 
-  - title: Autonomous Path-following Arduino Vehicle
+  - title: "Autonomous Path-following Arduino Vehicle"
     authors: <strong>Aryan Dalal</strong>, Quang Chau
     conference_short: Arduino, Embedded Systems, PID Control
     conference: ECE 3 Introduction to Electrical Engineering, 2026.
@@ -20,7 +20,7 @@ main:
     image: ./assets/img/teaser_example_2.png
     notes: Final Project for ECE 3 Introduction to Electrical Engineering (Spring 2026)
 
-  - title: Building, Analyzing, and Stress-testing ODE Solvers
+  - title: "Building, Analyzing, and Stress-testing ODE Solvers"
     authors: <strong>Aryan Dalal</strong>
     conference_short: Numerical Analysis, Differential Equations
     conference: Math 269A Graduate Advanced Numerical Analysis I, 2025.
@@ -30,7 +30,7 @@ main:
     image: ./assets/img/teaser_example_2.png
     notes: Final Project for Math 269A (Fall 2025)
     
-  - title: Protein Structure Prediction: A Multi-class Classification Problem
+  - title: "Protein Structure Prediction: A Multi-class Classification Problem"
     authors: <strong>Aryan Dalal</strong>, Andrew Zhang, Steven Villanueva, Jiwoo Hyun
     conference_short: Protein Structure, Machine Learning, Supervised Learning
     conference: Math 156 Machine Learning, 2025.
@@ -40,7 +40,7 @@ main:
     image: ./assets/img/teaser_example_2.png
     notes: Final Project for Math 156 Machine Learning (Fall 2025)
 
-- title: Models for Olympic Medal Tables
+- title: "Models for Olympic Medal Tables"
     authors: <strong>Aryan Dalal</strong>, Sofia Bonyadi, Jiayi Cora Guo, Julie Quan, Shani Shaham
     conference_short: Markov Chain Monte Carlo
     conference: Math 142 Mathematical Modeling, 2025.
