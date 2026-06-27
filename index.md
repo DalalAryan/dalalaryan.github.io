@@ -14,7 +14,7 @@ I am an undergraduate at [UCLA](https://www.ucla.edu) studying *Applied Mathemat
 
 ## Research Interests
 
-My research interests lie in deep reinforcement learning, computer vision, computability theory and computer systems architecture.
+My research interests lie in [deep reinforcement learning](), [computer vision](), [computability theory]() and [computer systems architecture]().
 
 ## Services
 
