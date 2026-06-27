@@ -6,7 +6,7 @@ layout: homepage
 
 I am an undergraduate at [UCLA](https://www.ucla.edu) studying *Applied Mathematics & Computer Engineering*. I am a current Machine Learning intern at [NASA](https://www.nasa.gov/glenn/) for Summer 2026 exploring scientific machine learning for deep space applications. Recently, I have been exploring Deep Reinforcement Learning and SystemVerilog on FPGA. Two very different interests but they're quite fascinating. This is a small website that holds some important things that I think are worth sharing.
 
-## Currently...
+## Currently
 - Research in Fine-tuning Large Language Models for Scientific Computing with [Ryan Anderson](https://ryan-a-anderson.github.io), Ph.D. Student, UCLA MathML Group.
 - I attended [AI Agents as Universal Task Solvers](https://ww3.math.ucla.edu/thursday-colloquium/) at UCLA Mathematics Thursday Colloqium by [Stefano Soatto]([https://web.cs.ucla.edu/~soatto/](https://en.wikipedia.org/wiki/Stefano_Soatto)) and [Alessandro Achille](https://alexachi.github.io).
 - I am reading [Reinforcement Learning](http://incompleteideas.net/book/the-book-2nd.html) by Richard Sutton & Andrew Barto to prepare for a Math 199: Directed Research in Mathematics for Winter 2027.
