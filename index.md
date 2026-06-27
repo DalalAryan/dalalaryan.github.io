@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate at UCLA studying Applied Mathematics & Computer Engineering. I am a current Machine Learning intern at NASA for Summer 2026 exploring scientific machine learning for deep space applications. Recently, I have been exploring Deep Reinforcement Learning and SystemVerilog on FPGA. Two very different interests but they're quite fascinating. This is a small website that holds some important things that I think are worth sharing.
+I am an undergraduate at [UCLA](https://www.ucla.edu) studying *Applied Mathematics & Computer Engineering*. I am a current Machine Learning intern at [NASA](https://www.nasa.gov/glenn/) for Summer 2026 exploring scientific machine learning for deep space applications. Recently, I have been exploring Deep Reinforcement Learning and SystemVerilog on FPGA. Two very different interests but they're quite fascinating. This is a small website that holds some important things that I think are worth sharing.
 
 ## Research Interests
 
