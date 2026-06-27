@@ -13,6 +13,12 @@ I am an undergraduate at [UCLA](https://www.ucla.edu) studying *Applied Mathemat
 - **Computability Theory:**
 - **Computer Systems Architecture:**
 
+## Involvements
+
+- **Research Assistant**: UCLA Mathematical Machine Learning Group (advised by [Guido Montufar](https://www.math.ucla.edu/~montufar/))
+- **Teaching Assistant** UCLA Mathematics, Calculus II (Math 31B with [Casey Johnson](https://www.math.ucla.edu/people/visiting/casey)) and Honors Linear Algebra (Math 115AH with [William Conley](https://www.math.ucla.edu/~wconley/))
+- 
+
 ## Personal Interests & Hobbies
 
 1. i like playing competitive sudoku on sudoku.coach
