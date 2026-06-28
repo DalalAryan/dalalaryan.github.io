@@ -173,48 +173,38 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
 
-/* ═══════════════════════════════════════════
-   TOP NAVIGATION BAR
-   Append this block to the bottom of style.css
-   (and style-no-dark-mode.css if you use it)
-   ═══════════════════════════════════════════ */
+/* ── TOP NAVIGATION BAR ──────────────────────────────
+   Replace everything from the previous navbar comment
+   to the end of style.css with this block.
+   ───────────────────────────────────────────────── */
 
-/* Push all page content down so nothing hides behind the fixed bar */
 body {
   padding-top: 48px !important;
 }
 
-/* The bar itself */
 .top-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 48px;
-  z-index: 1000;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-sizing: border-box;
   background-color: #fff;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* Inner container — matches your 960px wrapper width */
-.top-nav-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 0 16px;
-}
-
-/* Name / home link on the left */
 .top-nav-name {
   font-family: 'Crimson Pro', serif;
   font-weight: 600;
   font-size: 1.05rem;
   color: #043361 !important;
   text-decoration: none;
-  letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
@@ -222,21 +212,18 @@ body {
   color: #069 !important;
 }
 
-/* Section links on the right */
 .top-nav-links {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1.6rem;
-  margin: 0;
-  padding: 0;
 }
 
 .top-nav-links a {
   font-family: 'Crimson Pro', serif;
-  font-size: 0.97rem;
+  font-size: 0.95rem;
   color: #595959;
   text-decoration: none;
-  transition: color 0.15s ease;
   white-space: nowrap;
 }
 
@@ -244,99 +231,19 @@ body {
   color: #043361;
 }
 
-/* Hamburger button — hidden on desktop */
-.top-nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 22px;
-  height: 15px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.top-nav-toggle span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #043361;
-  border-radius: 2px;
-  transition: background-color 0.2s;
-}
-
-/* ── Dark mode ── */
 @media (prefers-color-scheme: dark) {
   .top-nav {
     background-color: #20212b;
-    border-bottom: 1px solid #2e2f3e;
+    border-bottom-color: #2e2f3e;
   }
-
-  .top-nav-name {
-    color: #3eb7f0 !important;
-  }
-
-  .top-nav-name:hover {
-    color: #7dd3f8 !important;
-  }
-
-  .top-nav-links a {
-    color: #dadbdf;
-  }
-
-  .top-nav-links a:hover {
-    color: #3eb7f0;
-  }
-
-  .top-nav-toggle span {
-    background-color: #3eb7f0;
-  }
+  .top-nav-name { color: #3eb7f0 !important; }
+  .top-nav-name:hover { color: #7dd3f8 !important; }
+  .top-nav-links a { color: #dadbdf; }
+  .top-nav-links a:hover { color: #3eb7f0; }
 }
 
-/* ── Mobile: hamburger menu ── */
-@media screen and (max-width: 700px) {
-  .top-nav-toggle {
-    display: flex;
-  }
-
-  .top-nav-links {
-    display: none;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    background-color: #fff;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 8px 16px 12px;
-  }
-
-  .top-nav-links.open {
-    display: flex;
-  }
-
-  .top-nav-links a {
-    padding: 8px 0;
-    width: 100%;
-    font-size: 1rem;
-    border-bottom: 1px solid #f0f0f0;
-  }
-
-  .top-nav-links a:last-child {
-    border-bottom: none;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .top-nav-links {
-      background-color: #20212b;
-      border-bottom: 1px solid #2e2f3e;
-    }
-
-    .top-nav-links a {
-      border-bottom-color: #2e2f3e;
-    }
-  }
+@media screen and (max-width: 600px) {
+  .top-nav { padding: 0 12px; }
+  .top-nav-links { gap: 0.75rem; }
+  .top-nav-links a { font-size: 0.8rem; }
 }
