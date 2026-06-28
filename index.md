@@ -32,4 +32,10 @@ My research interests lie in [deep reinforcement learning](), [computer vision](
 
 {% include_relative _includes/publications.md %}
 
+## Photos
+
+Below are a few photos that I think are worth sharing :D
+
+[Photo of me as a test](assets/img/avatar.png)
+
 <!-- {% include_relative _includes/services.md %} -->
