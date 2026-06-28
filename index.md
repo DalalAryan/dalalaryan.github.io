@@ -74,8 +74,8 @@ my friends and i at the sears tower in chicago (it was -15 degrees, very cold)
 ![cat](assets/img/cat.png)
 cat :D
 
-![stanford](assets/img/stanford.png)
-a photo of my mausi (another one!) and me at stanford university
+<!--![stanford](assets/img/stanford.png)
+a photo of my mausi (another one!) and me at stanford university-->
 
 ![pavit and me](assets/img/meandpavit.png)
 pavit came to visit me all the way from ireland to ucla :O
