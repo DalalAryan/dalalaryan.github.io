@@ -52,24 +52,34 @@ Below are a few photos that I think are worth sharing :D
 
 ![my nanu and me](assets/img/meandnanu.png)
 a photo of my nanu and i on his birthday
+
 ![nasa](assets/img/nasa.png)
 nasa glenn research center, where i am (currently) interning at for summer 2026 :D
+
 ![my mom and me](assets/img/meandmom.png)
 a picture of my mom and i in san francisco (the best city on the planet)
+
 ![my dad and me](assets/img/meanddad.png)
 my dad and i at a family member's wedding
+
 ![my mausi and me](assets/img/meandmausi.png)
 a photo of my mausi and i at oxford street in london
+
 ![milkyway](assets/img/milkyway.png)
 the milkyway from my iphone during a backpacking trip to joshua tree national park
+
 ![my friends and me](assets/img/meandfriends.png)
 my friends and i at the sears tower in chicago (it was -15 degrees, very cold)
+
 ![cat](assets/img/cat.png)
 cat :D
+
 ![stanford](assets/img/stanford.png)
 a photo of my mausi (another one!) and me at stanford university
+
 ![pavit and me](assets/img/meandpavit.png)
 pavit came to visit me all the way from ireland to ucla :O
+
 ![eiffel](assets/img/eiffel.png)
 the sky! and the eiffel tower i guess...
 
