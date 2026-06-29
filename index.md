@@ -36,13 +36,14 @@ My research interests lie in [deep reinforcement learning](), [computer vision](
 
 check out my friends' profiles!
 
-- [Max Cabilangan](https://maxercaber.github.io), Political Science, Ling/CS, UCLA '27
 - [Sahan Wijetunga](https://sahanwijetunga.github.io), Pure Math, UCLA '28
+- [Max Cabilangan](https://maxercaber.github.io), Political Science, Ling/CS, UCLA '27
 - [Rithwik Sharma](https://www.rithwiksharma.com), Computer Engineering, Georgia Tech '28
-- [Pavit Gogia](https://www.linkedin.com/in/pavit-gogia-8a276a265/), Computer Science & Biz, TCD '28
+- [Pavit Gogia](https://www.linkedin.com/in/pavit-gogia-8a276a265/), Computer Science & Biz, Trinity College '28
 - [Shashwat Joglekar](https://www.linkedin.com/in/shashwat-joglekar-3917a5255/), Physics & Math, UIUC '28
-- [Nikhil Dewitt](https://www.linkedin.com/in/nikhildewitt/), Computer Science, UCLA '27
+- [Sharanya Goswami](https://www.linkedin.com/in/sharanya-goswami-ab9796243), Biomedical Engineering, Johns Hopkins '27
 - [Brandon Tran](https://www.linkedin.com/in/brandontranucla/), Psychobiology, UCLA '28
+- [Nikhil Dewitt](https://www.linkedin.com/in/nikhildewitt/), Computer Science, UCLA '27
 - [Pierre-Louis Nguyen](https://www.linkedin.com/in/pierre-louis-nguyen-59b418301/), Pure Math, UCLA '28
 - [Da-Yi Wu](https://www.linkedin.com/in/da-yi-w-02671628b/), Applied Math, UCLA '28
 
