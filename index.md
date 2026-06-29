@@ -40,7 +40,7 @@ check out my friends' profiles!
 - [Max Cabilangan](https://maxercaber.github.io), Political Science, Ling/CS, UCLA '27
 - [Rithwik Sharma](https://www.rithwiksharma.com), Computer Engineering, Georgia Tech '28
 - [Pavit Gogia](https://pavit.gogia.ie), Computer Science & Biz, Trinity College '28
-- [Shashwat Joglekar](https://shashwatjoglekar.githuib.io), Physics & Math, UIUC '28
+- [Shashwat Joglekar](https://shashwatjoglekar.github.io), Physics & Math, UIUC '28
 - [Sharanya Goswami](https://www.linkedin.com/in/sharanya-goswami-ab9796243), Biomedical Engineering, Johns Hopkins '27
 - [Brandon Tran](https://www.linkedin.com/in/brandontranucla/), Psychobiology, UCLA '28
 - [Nikhil Dewitt](https://www.linkedin.com/in/nikhildewitt/), Computer Science, UCLA '27
