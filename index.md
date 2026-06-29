@@ -16,7 +16,7 @@ I am an undergraduate at [UCLA](https://www.ucla.edu) studying *Applied Mathemat
 
 My research interests lie in [deep reinforcement learning](), [computer vision](), [computability theory]() and [computer systems architecture](). I am passionate about learning the underlying theory as well as seeing how frontier research can bring positive impact.
 
-## Services
+## Positions
 
 - **Research Assistant**: UCLA Mathematical Machine Learning Group (advised by [Guido Montufar](https://www.math.ucla.edu/~montufar/))
 - **Teaching Assistant:** UCLA Mathematics, Calculus II (Math 31B with [Casey Johnson](https://www.math.ucla.edu/people/visiting/casey)) and Honors Linear Algebra (Math 115AH with [William Conley](https://www.math.ucla.edu/~wconley/))
