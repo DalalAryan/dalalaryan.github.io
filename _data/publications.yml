@@ -3,8 +3,8 @@ main:
     authors: <strong>Aryan Dalal</strong>, Nikhil Dewitt, Aadrij Upadya
     conference_short: Deep Learning
     conference: ECE C143A Neural Signal Processing & Brain-Computer Interface Design with Machine Learning, 2025.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+    #pdf: https://arxiv.org/pdf/2002.10211.pdf
+    #code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     #page: https://class-il.mpi-inf.mpg.de/mnemonics/
     #bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     notes: #Final Project for ECE C143A Neural Signal Processing & Brain-Computer Interface Design with Machine Learning (Fall 2025)
@@ -14,8 +14,8 @@ main:
     authors: <strong>Aryan Dalal</strong>, Quang Chau
     conference_short: Embedded Systems
     conference: ECE 3 Introduction to Electrical Engineering, 2026.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
+    #pdf: https://arxiv.org/pdf/2306.00988.pdf
+    #code: https://github.com/MrGiovanni/ContinualLearning
     #bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/teaser_example_2.png
     notes: #Final Project for ECE 3 Introduction to Electrical Engineering (Spring 2026)
@@ -24,8 +24,8 @@ main:
     authors: <strong>Aryan Dalal</strong>
     conference_short: Numerical Analysis
     conference: Math 269A Graduate Advanced Numerical Analysis I, 2025.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
+    #pdf: https://arxiv.org/pdf/2306.00988.pdf
+    #code: https://github.com/MrGiovanni/ContinualLearning
     #bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/teaser_example_2.png
     notes: #Final Project for Math 269A (Fall 2025)
@@ -34,8 +34,8 @@ main:
     authors: <strong>Aryan Dalal</strong>, Andrew Zhang, Steven Villanueva, Jiwoo Hyun
     conference_short: Machine Learning
     conference: Math 156 Machine Learning, 2025.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
+    #pdf: https://arxiv.org/pdf/2306.00988.pdf
+    #code: https://github.com/MrGiovanni/ContinualLearning
     #bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/teaser_example_2.png
     notes: #Final Project for Math 156 Machine Learning (Fall 2025)
@@ -44,8 +44,8 @@ main:
     authors: <strong>Aryan Dalal</strong>, Sofia Bonyadi, Jiayi Cora Guo, Julie Quan, Shani Shaham
     conference_short: Mathematical Modeling
     conference: Math 142 Mathematical Modeling, 2025.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
+    #pdf: https://arxiv.org/pdf/2306.00988.pdf
+    #code: https://github.com/MrGiovanni/ContinualLearning
     #bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/teaser_example_2.png
     notes: #Final Project for Math 142 Mathematical Modeling (Spring 2025)
