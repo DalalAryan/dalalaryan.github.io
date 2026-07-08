@@ -1,0 +1,12 @@
+---
+layout: project
+---
+
+<p class="blog-post-meta">
+  {{ page.date | date: "%B %-d, %Y" }}
+  {% if page.keywords and page.keywords.size > 0 %}
+    &middot; {{ page.keywords | join: ", " }}
+  {% endif %}
+</p>
+
+{{ content }}

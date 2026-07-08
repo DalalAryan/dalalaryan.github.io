@@ -2,3 +2,105 @@
 ---
 
 @import "minimal-light";
+
+.latest-posts {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.latest-posts ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.latest-posts li {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.latest-posts time {
+  color: #777;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.latest-posts .all-posts-link {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.sidebar-quote {
+  margin: 3.5rem auto 0;
+  max-width: 215px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #777;
+}
+
+.blog-post-meta {
+  margin: -6px 0 24px;
+  color: #777;
+  font-size: 12px;
+}
+
+.blog-archive-list {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+
+.blog-archive-item {
+  padding: 0 0 18px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-archive-item h2 {
+  margin-bottom: 6px;
+}
+
+.blog-archive-date,
+.blog-archive-keywords {
+  color: #777;
+  font-size: 11px;
+}
+
+.blog-archive-item p {
+  margin-bottom: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .latest-posts li,
+  .blog-archive-item {
+    border-color: #555761;
+  }
+
+  .latest-posts time,
+  .sidebar-quote,
+  .blog-post-meta,
+  .blog-archive-date,
+  .blog-archive-keywords {
+    color: #aeb0b8;
+  }
+}
+
+@media print, screen and (max-width: 960px) {
+  .latest-posts {
+    max-width: 460px;
+    margin: 2rem auto 0;
+  }
+
+  .sidebar-quote {
+    margin-top: 2rem;
+  }
+}
