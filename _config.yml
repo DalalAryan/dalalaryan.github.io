@@ -34,7 +34,7 @@ auto_dark_mode: true
 
 # Default color theme for first-time visitors: "dark" or "light".
 # A visitor's selection from the theme toggle is remembered in their browser.
-default_theme: dark
+default_theme: light
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.

@@ -18,6 +18,7 @@ My research interests lie in [deep reinforcement learning](), [computer vision](
 
 ## Positions
 
+- **Summer 2026 Intern**: NASA Glenn Research Center (advised by [Brooke R. Weborg]())
 - **Research Assistant**: UCLA Mathematical Machine Learning Group (advised by [Guido Montufar](https://www.math.ucla.edu/~montufar/))
 - **Teaching Assistant:** UCLA Mathematics, Calculus II (Math 31B with [Casey Johnson](https://www.math.ucla.edu/people/visiting/casey)) and Honors Linear Algebra (Math 115AH with [William Conley](https://www.math.ucla.edu/~wconley/))
 - **Workshops Officer:** ACM AI--Association of Computing Machinery in Artificial Intelligence (Fundamentals of Machine Learning Theory, Computer Vision & Natural Language Processing, Modern Methods in Frontier Artificial Intelligence)
