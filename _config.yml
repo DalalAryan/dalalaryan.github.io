@@ -32,6 +32,10 @@ enable_footnote: true
 # You may use the option to disable the automatic dark theme
 auto_dark_mode: true
 
+# Default color theme for first-time visitors: "dark" or "light".
+# A visitor's selection from the theme toggle is remembered in their browser.
+default_theme: dark
+
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
 font: "Serif" # or "Sans Serif"

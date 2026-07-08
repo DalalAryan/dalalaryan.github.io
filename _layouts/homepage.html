@@ -10,6 +10,16 @@
     {% if site.keywords %}
     <meta name="keywords" content="{{ site.keywords }}">
     {% endif %}
+    <script>
+      (function () {
+        var defaultTheme = {{ site.default_theme | default: "dark" | jsonify }};
+        try {
+          document.documentElement.dataset.theme = localStorage.getItem("theme") || defaultTheme;
+        } catch (error) {
+          document.documentElement.dataset.theme = defaultTheme;
+        }
+      }());
+    </script>
     {% if site.canonical %}
     <link rel="canonical" href="{{ site.canonical }}"/>
     {% endif %}
@@ -26,13 +36,8 @@
     {% else %}
     <link rel="stylesheet" href="/assets/css/font.css">
     {% endif %}
-    {% if site.auto_dark_mode %}
-    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/publications.css">
-    {% else %}
-    <link rel="stylesheet" href="/assets/css/style-no-dark-mode.css">
-    <link rel="stylesheet" href="/assets/css/publications-no-dark-mode.css">
-    {% endif %}
+    <link rel="stylesheet" href="/assets/css/style.css">
 
   </head>
   <body>
@@ -50,6 +55,7 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/theme-toggle.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
