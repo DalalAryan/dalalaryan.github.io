@@ -4,7 +4,7 @@
 @import "minimal-light";
 
 .latest-posts {
-  margin-top: 4.5rem;
+  margin-top: 2rem;
   text-align: left;
 }
 
@@ -49,10 +49,11 @@
 
 .sidebar-quote {
   clear: both;
-  margin: 3.5rem auto 0;
+  margin: 2rem auto 0;
   max-width: 215px;
   text-align: center;
   font-size: 10px;
+  font-style: italic;
   line-height: 1.5;
   color: #777;
 }
