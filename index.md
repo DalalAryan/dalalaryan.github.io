@@ -1,4 +1,4 @@
----
+<img width="1014" height="684" alt="image" src="https://github.com/user-attachments/assets/af17f5b7-9386-477a-a28d-d870d4ba6a42" />---
 layout: homepage
 ---
 
@@ -15,6 +15,10 @@ I am an undergraduate at [UCLA](https://www.ucla.edu) studying *Applied Mathemat
 ## Research Interests
 
 My research interests lie in [deep reinforcement learning](), [computer vision](), [computability theory]() and [computer systems architecture](). I am passionate about learning the underlying theory as well as seeing how frontier research can bring positive impact.
+
+## Invited Talks
+
+1. **Aryan Dalal** (July 2026). *Attention-based Graph Neural Networks for Electronic Design Automation with Randomized Network Topologies*. Invited talk at NASA AI Summit Summer 2026, Cleveland, OH
 
 ## Positions
 
