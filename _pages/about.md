@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate Student · Mathematics & Computer Engineering
+subtitle: _"If a machine is expected to be infallible, it cannot also be intelligent."_ —— Alan Turing, 1950
 
 profile:
   align: right
@@ -33,6 +33,6 @@ I was born in Detroit, Michigan, where I spent a few childhood years before movi
 
 Beyond mathematics and computer engineering, I enjoy playing pickleball and soccer. I also go out backpacking (and have been to 4 California National Parks!) as well as the occasional camping.
 
-## [blog]({{ '/blog/' | relative_url }})
+## [latest posts]({{ '/blog/' | relative_url }})
 
 {% include latest_posts.liquid %}
