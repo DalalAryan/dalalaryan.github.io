@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: '"If a machine is expected to be infallible, it cannot also be intelligent." - Alan Turing, 1950'
+subtitle: '*"If a machine is expected to be infallible, it cannot also be intelligent."* - Alan Turing, 1950'
 
 profile:
   align: right
