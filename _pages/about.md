@@ -22,7 +22,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false # rendered manually above news (see bottom of this file)
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -32,3 +32,7 @@ Hi there! I am Aryan Dalal, an undergraduate in mathematics and computer enginee
 I was born in Detroit, Michigan, where I spent a few childhood years before moving to India. I was part of the International Baccalaureate programme for much of my studies before returning to the United States to begin my higher education.
 
 Beyond mathematics and computer engineering, I enjoy playing pickleball and soccer. I also go out backpacking (and have been to 4 California National Parks!) as well as the occasional camping.
+
+## [blog]({{ '/blog/' | relative_url }})
+
+{% include latest_posts.liquid %}

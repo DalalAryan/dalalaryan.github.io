@@ -3,8 +3,9 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: My GitHub profile and repositories.
-nav: true
+nav: false # hidden from navigation on purpose
 nav_order: 4
+sitemap: false
 ---
 
 {% if site.data.repositories.github_users %}

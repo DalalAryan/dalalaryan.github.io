@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello, world
-date: 2026-10-08 12:00:00
+date: 2026-10-07 12:00:00
 description: Welcome to my blog
 tags: introduction
 categories: general
