@@ -1,128 +1,95 @@
 cv:
   name: Aryan Dalal
-  label: Undergraduate
+  label: Undergraduate Student
   email: aryandalal@ucla.edu
   location: Los Angeles, CA
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Undergraduate in Mathematics and Computer Engineering at UCLA, interested in theoretical computer science, the mathematical foundations of machine learning, and hardware-oriented ML.
 
   social_networks:
-    #- network: X
-    #  username: AlbertEinstein
     - network: GitHub
       username: DalalAryan
     - network: LinkedIn
       username: dalalaryan
 
-  address:
-    street: 920 Weyburn Place
-    city: Los Angeles
-    region: California
-    postalCode: CA 90024
-    countryCode: US
-
   sections:
     Education:
       - institution: University of California, Los Angeles (UCLA)
         location: Los Angeles, CA
-        url: https://www.uzh.ch/
-        area: Computer Engineering, Mathematics
+        url: https://www.ucla.edu/
+        area: Computer Engineering & Mathematics
         studyType: B.S.
         start_date: 2024
-        end_date: 2028
-        score: ""
-        courses: ""
+        end_date: 2028-06
+        score: "3.6"
+        courses: "Algorithms & Complexity Theory, Theory of Computation, Deep Learning, Reinforcement Learning, FPGA Design, Computer Architecture"
         highlights:
-          - Description 1.
-          - Description 2.
-
-      #- institution: Eidgenössische Technische Hochschule
-      #  location: Zurich, Switzerland
-      #  area: Physics
-      #  studyType: Federal teaching diploma
-      #  start_date: 1896
-      #  end_date: 1900
-      # highlights:
-      #    - Description 1.
-      #    - Description 2.
+          - $2000 Undergraduate Research Award
+          - $3200 Summer Internship Excellence Award
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: NASA
+        position: Machine Learning Engineering Intern
+        location: Cleveland, OH
+        start_date: 2026-06
+        end_date: 2026-09
         highlights:
-          - Relativity
-          - Description 2.
+          - Built an attention-based graph neural network (GNN) in PyTorch to predict 4-port impedance spectra (501 frequency points) of randomized circuit topologies as a fast surrogate for SPICE simulation.
+          - Achieved common-mode R² of 0.986 and differential-mode R² of 0.978 across 100,000 simulated netlists by iterating on model architecture, normalization, and regularization using Optuna and MLflow.
+          - Performed readout ablations (node-level, mean, and attention pooling) and binned error diagnostics to isolate why differential-mode targets underperformed.
+          - Led a data-scaling study from 1K to 95K training examples using cluster-stratified sampling and a fixed held-out test set using Scikit-learn and Pandas.
 
-      #- company: California Institute of Technology
-      #  position: Visiting Professor
-      #  location: Pasadena, California, US
-      #  start_date: 1933
-      #  end_date: 1933
-      #  highlights:
-      #    - Description 1.
-      #    - Description 2.
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: UCLA
+        position: Undergraduate Researcher, advised by Prof. Guido Montufar
+        location: Los Angeles, CA
+        start_date: 2025-10
+        end_date: present
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Studying LLM formal theorem proving (Lean, LeanDojo), autoformalization, and RLVR training through the NeurIPS 2025 MATH-AI Workshop with a graduate mentor.
+          - Expanded a 78-example dataset to 458 instruction pairs via Evol-Instruct-style augmentation with JSON validation.
+          - Fine-tuned Qwen2.5-7B-Instruct with 4-bit QLoRA for algebraic-geometry code generation.
+          - Built a 3-stage GEORGE pipeline (Sohoni et al.) in PyTorch and SpuCo to make a CNN robust to spurious background cues in SpuCoMNIST.
+          - Clustered baseline classifier outputs to find hidden subgroups without labels, then retrained on balanced batches, raising worst-group accuracy above 98%.
 
-    #Awards:
-    #  - title: Nobel Prize in Physics
-    #    authors:
-    #      - "Royal Swedish Academy of Sciences"
-    #    date: 1921-11-01
-    #    awarder: Royal Swedish Academy of Sciences
-    #    url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-    #    summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+    Projects:
+      - name: Brain-Computer Interface Speech Decoding
+        summary: EvalAI Brain-to-Text Benchmark 2024
+        start_date: 2025-10
+        end_date: 2025-10
+        highlights:
+          - Designed a unidirectional GRU decoder in PyTorch to predict phonemes from intracranial neural recordings.
+          - Trained with CTC loss and mixed precision on Google Cloud Platform.
+          - Added LayerNorm, post-GRU projection layers, and temporal masking, cutting Phoneme Error Rate from 22.7% to 19.0% at equal per-batch cost.
 
-    #  - title: Max Planck Medal
-    #    authors:
-    #      - "German Physical Society"
-    #    date: 2029
-    #    awarder: German Physical Society
-    #    summary: Awarded for outstanding scientific achievement
+      - name: Skin Cancer Prediction from 3D Total Body Photographs
+        summary: github.com/DalalAryan/CancerPredictionModel
+        start_date: 2025-07
+        end_date: 2025-07
+        highlights:
+          - Engineered 30 multi-correlation features from 10K segmented lesion images with OpenCV and scikit-learn.
+          - Stacked XGBoost, LightGBM, SVM, and CART base learners under an XGBoost meta-classifier.
+          - Reached 88.4% accuracy and 0.81 macro F1 on malignant vs. benign classification.
 
-    # Publications:
-    #  - title: Zur Elektrodynamik bewegter Körper
-    #    authors:
-    #      - Albert Einstein
-    #    publisher: Annalen der Physik
-    #    releaseDate: 1905-06-30
-    #    url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-    #    summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-    #  - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-    #    authors:
-    #      - Albert Einstein
-    #    publisher: Annalen der Physik
-    #    releaseDate: 1905-03-18
-    #    url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-    #    summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-    #  - title: Die Grundlage der allgemeinen Relativitätstheorie
-    #    authors:
-    #      - Albert Einstein
-    #    publisher: Annalen der Physik
-    #    releaseDate: 1916-03-20
-    #    url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-    #    summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+    Invited Talks:
+      - title: Attention-based Graph Neural Networks for Electronic Design Automation with Randomized Network Topologies
+        authors:
+          - Aryan Dalal
+        publisher: NASA AI Summit, Cleveland, OH
+        releaseDate: 2026-07
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming
+        level: ""
+        icon: fa-solid fa-code
+        keywords: "Python, C/C++, R, MATLAB, HTML/CSS, SQLite"
+      - name: Software Tools
+        level: ""
+        icon: fa-solid fa-wrench
+        keywords: "NumPy, Pandas, Polars, SciPy, Git, Linux, Docker, REST APIs, FastAPI"
+      - name: ML/AI
+        level: ""
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, TensorFlow, Keras, scikit-learn, Optuna, MLflow, LangChain, LangGraph, CrewAI, LlamaIndex, ChromaDB, ONNX Runtime, ptflops, vLLM, RAG"
 
     Languages:
       - name: English
@@ -130,42 +97,3 @@ cv:
 
       - name: Hindi
         summary: "Native Speaker"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    #Certificates:
-    #  - name: Machine Learning
-    #    date: 2018-01-01
-    #    issuer: Stanford University
-    #    icon: fa-solid fa-location-dota
-
-    #  - name: Quantum Computing
-    #    date: 2018-01-01
-    #    issuer: Stanford University
-    #    icon: fa-solid fa-tag
-
-    #  - name: Quantum Information
-    #    date: 2018-01-01
-    #    issuer: Stanford University
-    #    icon: fa-solid fa-envelope
-
-    # Projects:
-    #  - name: Quantum Computing
-    #    summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-    #    highlights:
-    #      - Quantum Teleportation
-    #      - Quantum Cryptography
-    #    start_date: 2018-01-01
-    #    end_date: 2018-01-01
-
-    # References:
-    #  - name: Professor John Doe
-    #    icon: fa-solid fa-laptop
-    #    reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-    #  - name: Professor Jane Smith
-    #    icon: fa-solid fa-thumbtack
-    #    reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
