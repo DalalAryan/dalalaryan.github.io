@@ -13,7 +13,7 @@ profile:
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! I am Aryan Dalal, an undergraduate in mathematics and computer engineering at [University of California, Los Angeles (UCLA)](www.ucla.edu). My academic interests focus on theoretical computer science (computability and complexity theory), mathematical foundations of machine learning and reinforcement learning. I am also interested in FPGAs and hardware-oriented applications of machine learning systems. I am advised by Professor [Guido Montufar](https://www.math.ucla.edu/~montufar/).
+Hi there! I am Aryan Dalal, an undergraduate in mathematics and computer engineering at [University of California, Los Angeles (UCLA)](https://www.ucla.edu). My academic interests focus on theoretical computer science (computability and complexity theory), mathematical foundations of machine learning and reinforcement learning. I am also interested in FPGAs and hardware-oriented applications of machine learning systems. I am advised by Professor [Guido Montufar](https://www.math.ucla.edu/~montufar/).
 
 I was born in Detroit, Michigan, where I spent a few childhood years before moving to India. I was part of the International Baccalaureate programme for much of my studies before returning to the United States to begin my higher education.
 
