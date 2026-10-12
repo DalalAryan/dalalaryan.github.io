@@ -24,7 +24,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 5 # leave blank to include all the blog posts
 ---
 
 Hi there! I am Aryan Dalal, an undergraduate in mathematics and computer engineering at [University of California, Los Angeles (UCLA)](https://www.ucla.edu). My academic interests focus on theoretical computer science (computability and complexity theory), mathematical foundations of machine learning and reinforcement learning. I am also interested in FPGAs and hardware-oriented applications of machine learning systems. I am advised by Professor [Guido Montufar](https://www.math.ucla.edu/~montufar/).
