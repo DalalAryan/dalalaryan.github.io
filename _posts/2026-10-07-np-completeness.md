@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to NP Completeness and Karp Reductions
 date: 2026-10-07 12:00:00
-description: An Introduction to NP Completeness and Karp Reudctions
+description: An Introduction to NP Completeness and Karp Reductions
 tags: introduction
 categories: general
 related_posts: false

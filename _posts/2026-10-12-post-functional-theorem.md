@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Post's Functional Completeness Theorem: Is Negation Sufficient for Universality?
-date: 2026-10-07 12:00:00
+title: "Post's Functional Completeness Theorem: Is Negation Sufficient for Universality?"
+date: 2026-10-12 12:00:00
 description: Negation is Necessary but not Sufficient for Universality
 tags: introduction
 categories: general
