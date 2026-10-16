@@ -8,7 +8,9 @@ categories: general
 related_posts: false
 ---
 
-Hi! I'm Aryan, an undergraduate at UCLA studying mathematics and computer engineering. In this post, I discuss [Post's Functional Completeness Theorem (Emil Post, 1941)](https://en.wikipedia.org/wiki/Functional_completeness). This post was mostly motivated by a question on my CS 181 Theory of Computation Problem Set: 
+Hi! I'm Aryan, an undergraduate at UCLA studying mathematics and computer engineering. In this post, I discuss [Post's Functional Completeness Theorem (Emil Post, 1941)](https://en.wikipedia.org/wiki/Functional_completeness). 
+
+This post was mostly motivated by a question on my CS 181 Theory of Computation Problem Set: 
 
 (Boaz Barak Intro TCS Exercise 3.4) Prove that for every $n$-bit input circuit $C$ that contains only AND and OR gates, as well as gates that compute the constant functions 0 and 1, $C$ is *monotone*, in the sense that if $x, x' \in \lbrace 0, 1 \rbrace^n$ satisfy $x_i \leq x'_i$ for every $i \in [n]$, then $C(x) \leq C(x')$. Conclude that the set $\{\text{AND}, \text{OR}, 0, 1\}$ is *not* universal.
 
